@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PongController">
+   <children>
+      <Group stylesheets="@application.css">
+         <children>
+            <Rectangle fx:id="background" arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+            <Rectangle fx:id="topWall" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+            <Rectangle fx:id="leftWall" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+            <Rectangle fx:id="bottomWall" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutY="590.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+            <Rectangle fx:id="rightWall" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" layoutX="790.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+            <Rectangle fx:id="ball" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="400.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+            <Line fx:id="line" endX="400.0" endY="600.0" startX="400.0" stroke="WHITE" strokeDashOffset="1.0" strokeWidth="5.0" style="-fx-stroke-dash-array: 20; -fx-stroke: white;" />
+            <Text fx:id="leftScore" fill="WHITE" layoutX="100.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Text>
+            <Text fx:id="rightScore" fill="WHITE" layoutX="700.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="leftRacket" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="20.0" x="30.0" y="250.0" />
+            <Rectangle fx:id="rightRacket" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" stroke="BLACK" strokeType="INSIDE" width="20.0" x="750.0" y="250.0" />
+            <Text fx:id="gameover" fill="WHITE" layoutX="180.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+   </children>
+</VBox>
